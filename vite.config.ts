@@ -7,26 +7,24 @@ import AutoImport from 'unplugin-auto-import/vite'
 
 export default defineConfig({
 	resolve: {
-		alias: [
-			{ find: '@', replacement: fileURLToPath(new URL('./src', import.meta.url)) }
-		]
+		alias: [{ find: '@', replacement: fileURLToPath(new URL('./src', import.meta.url)) }],
 	},
 	plugins: [
 		vue(),
 		AutoImport({
 			imports: ['vue', '@vueuse/core'],
 			resolvers: [ElementPlusResolver()],
-			dirs: []
+			dirs: [],
 		}),
 		Components({
-			resolvers: [ElementPlusResolver()]
-		})
+			resolvers: [ElementPlusResolver()],
+		}),
 	],
 	css: {
 		preprocessorOptions: {
 			scss: {
-				additionalData: `@import "@/assets/styles/index.scss";`
-			}
-		}
-	}
+				additionalData: `@import "@/assets/styles/index.scss";`,
+			},
+		},
+	},
 })

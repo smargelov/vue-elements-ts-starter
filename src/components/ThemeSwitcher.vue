@@ -1,10 +1,10 @@
 <template>
-<el-switch
-	v-model="isDark"
-	:active-action-icon="Moon"
-	:inactive-action-icon="Sunny"
-	class="theme-switcher"
-/>
+	<el-switch
+		v-model="isDark"
+		:active-action-icon="Moon"
+		:inactive-action-icon="Sunny"
+		class="theme-switcher"
+	/>
 </template>
 
 <script setup lang="ts">

@@ -12,11 +12,7 @@
 			"customSyntax": "postcss-html"
 		}
 	],
-	"plugins": [
-		"stylelint-order",
-		"stylelint-prettier",
-		"stylelint-config-rational-order/plugin"
-	],
+	"plugins": ["stylelint-order", "stylelint-prettier", "stylelint-config-rational-order/plugin"],
 	"rules": {
 		"no-descending-specificity": null,
 		"order/properties-order": [],
