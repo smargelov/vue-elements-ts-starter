@@ -1,7 +1,7 @@
 import eslint from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import pluginVue from 'eslint-plugin-vue'
-import eslintConfigPrettier from "eslint-config-prettier";
+import eslintConfigPrettier from 'eslint-config-prettier'
 
 export default [
 	eslint.configs.recommended,
@@ -11,27 +11,24 @@ export default [
 	{
 		rules: {
 			'vue/no-unused-vars': 'error',
-			'vue/html-indent': ['error', 'tab', {
-				'attribute': 1,
-				'baseIndent': 0,
-				'closeBracket': 0,
-				'alignAttributesVertically': true,
-				'ignores': []
-			}],
+			'vue/html-indent': ['error', 'tab'],
 			'vue/multi-word-component-names': 'off',
 			'vue/component-api-style': ['error', ['script-setup', 'composition']],
-			"vue/max-attributes-per-line": ["error", {
-				"singleline": {
-					"max": 3
+			'vue/max-attributes-per-line': [
+				'error',
+				{
+					singleline: {
+						max: 3,
+					},
 				},
-			}],
+			],
 			'vue/component-name-in-template-casing': [
 				'error',
 				'kebab-case',
 				{
 					registeredComponentsOnly: false,
-					ignores: []
-				}
+					ignores: [],
+				},
 			],
 			'vue/attributes-order': [
 				'error',
@@ -49,12 +46,12 @@ export default [
 						'ATTR_STATIC',
 						'ATTR_SHORTHAND_BOOL',
 						'EVENTS',
-						'CONTENT'
+						'CONTENT',
 					],
-					alphabetical: false
-				}
+					alphabetical: false,
+				},
 			],
-			'no-undef': 'off'
-		}
-	}
+			'no-undef': 'off',
+		},
+	},
 ]
