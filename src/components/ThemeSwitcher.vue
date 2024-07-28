@@ -1,15 +1,16 @@
 <template>
 <el-switch
 	v-model="isDark"
-	class="theme-switcher"
 	:active-action-icon="Moon"
 	:inactive-action-icon="Sunny"
+	class="theme-switcher"
 />
 </template>
 
 <script setup lang="ts">
-const isDark = useDark()
 import { Moon, Sunny } from '@element-plus/icons-vue'
+
+const isDark = useDark()
 </script>
 
 <style lang="scss" scoped>

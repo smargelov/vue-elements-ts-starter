@@ -27,9 +27,6 @@
 		"paths": {
 			"@/*": [
 				"./src/*"
-			],
-			"@element-plus/*": [
-				"./node_modules/@element-plus/*"
 			]
 		}
 	},

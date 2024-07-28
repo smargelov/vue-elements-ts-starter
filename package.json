@@ -1,28 +1,46 @@
 {
-  "name": "vue-elements-ts-starter",
-  "private": true,
-  "version": "0.0.1",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@element-plus/icons-vue": "^2.3.1",
-    "@vueuse/core": "^10.11.0",
-    "element-plus": "^2.7.8",
-    "vue": "^3.4.31",
-    "vue-router": "^4.4.0"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.5",
-    "@vue/language-server": "^2.0.29",
-    "sass": "^1.77.8",
-    "typescript": "^5.2.2",
-    "unplugin-auto-import": "^0.18.2",
-    "unplugin-vue-components": "^0.27.3",
-    "vite": "^5.3.4",
-    "vue-tsc": "^2.0.24"
-  }
+	"name": "vue-elements-ts-starter",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"eslint": "eslint",
+		"eslint:fix": "eslint --fix",
+		"stylelint": "stylelint \"**/*.{scss,vue,css}\"",
+		"stylelint:fix": "stylelint --fix",
+		"build": "vue-tsc -b && vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@element-plus/icons-vue": "^2.3.1",
+		"@vueuse/core": "^10.11.0",
+		"element-plus": "^2.7.8",
+		"vue": "^3.4.31",
+		"vue-router": "^4.4.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.8.0",
+		"@vitejs/plugin-vue": "^5.0.5",
+		"@vue/language-server": "^2.0.29",
+		"eslint": "^9.8.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-vue": "^9.27.0",
+		"prettier": "^3.3.3",
+		"sass": "^1.77.8",
+		"stylelint": "^16.7.0",
+		"stylelint-config-html": "^1.1.0",
+		"stylelint-config-rational-order": "^0.1.2",
+		"stylelint-config-recommended-vue": "^1.5.0",
+		"stylelint-config-standard-scss": "^13.1.0",
+		"stylelint-config-standard-vue": "^1.0.0",
+		"stylelint-order": "^6.0.4",
+		"stylelint-prettier": "^5.0.2",
+		"typescript": "^5.2.2",
+		"typescript-eslint": "^8.0.0-alpha.10",
+		"unplugin-auto-import": "^0.18.2",
+		"unplugin-vue-components": "^0.27.3",
+		"vite": "^5.3.4",
+		"vue-tsc": "^2.0.24"
+	}
 }
